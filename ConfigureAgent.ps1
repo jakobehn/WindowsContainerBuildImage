@@ -1,3 +1,4 @@
+
 $url = $env:TFS_URL
 $token = $env:TFS_PAT
 $pool = $env:TFS_POOL_NAME
@@ -13,5 +14,6 @@ Write-Verbose -Verbose "Configuring agent $agentName for pool $pool"
             --agent $agentName  `
             --acceptteeeula `
             --replace `
-            --runAsService `
             --gituseschannel
+
+.\run.cmd
